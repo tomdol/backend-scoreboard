@@ -1,0 +1,354 @@
+[
+    {
+        "date": "11/17/2020 20:33:35",
+        "failed": 349,
+        "passed": 546,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "ngraph-core",
+                "version": "0.0.0.dev0"
+            },
+            {
+                "name": "onnx",
+                "version": "1.7.0"
+            }
+        ]
+    },
+    {
+        "date": "11/18/2020 00:58:59",
+        "failed": 350,
+        "passed": 545,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "ngraph-core",
+                "version": "0.0.0.dev0"
+            },
+            {
+                "name": "onnx",
+                "version": "1.7.0"
+            }
+        ]
+    },
+    {
+        "date": "11/23/2020 00:50:12",
+        "failed": 400,
+        "passed": 522,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "ngraph-core",
+                "version": "0.0.0.dev0"
+            },
+            {
+                "name": "onnx",
+                "version": "1.8.0"
+            }
+        ]
+    },
+    {
+        "date": "11/24/2020 00:55:54",
+        "failed": 401,
+        "passed": 521,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "ngraph-core",
+                "version": "0.0.0.dev0"
+            },
+            {
+                "name": "onnx",
+                "version": "1.8.0"
+            }
+        ]
+    },
+    {
+        "date": "11/25/2020 00:53:24",
+        "failed": 400,
+        "passed": 522,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "ngraph-core",
+                "version": "0.0.0.dev0"
+            },
+            {
+                "name": "onnx",
+                "version": "1.8.0"
+            }
+        ]
+    },
+    {
+        "date": "11/26/2020 00:56:05",
+        "failed": 401,
+        "passed": 521,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "ngraph-core",
+                "version": "0.0.0.dev0"
+            },
+            {
+                "name": "onnx",
+                "version": "1.8.0"
+            }
+        ]
+    },
+    {
+        "date": "11/27/2020 00:50:59",
+        "failed": 400,
+        "passed": 522,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "ngraph-core",
+                "version": "0.0.0.dev0"
+            },
+            {
+                "name": "onnx",
+                "version": "1.8.0"
+            }
+        ]
+    },
+    {
+        "date": "11/28/2020 00:51:25",
+        "failed": 401,
+        "passed": 521,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "ngraph-core",
+                "version": "0.0.0.dev0"
+            },
+            {
+                "name": "onnx",
+                "version": "1.8.0"
+            }
+        ]
+    },
+    {
+        "date": "11/30/2020 00:48:09",
+        "failed": 400,
+        "passed": 522,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "ngraph-core",
+                "version": "0.0.0.dev0"
+            },
+            {
+                "name": "onnx",
+                "version": "1.8.0"
+            }
+        ]
+    },
+    {
+        "date": "12/21/2020 15:23:55",
+        "failed": 399,
+        "passed": 523,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "ngraph-core",
+                "version": "0.0.0.dev0"
+            },
+            {
+                "name": "onnx",
+                "version": "1.8.0"
+            }
+        ]
+    },
+    {
+        "date": "12/22/2020 00:49:01",
+        "failed": 398,
+        "passed": 524,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "ngraph-core",
+                "version": "0.0.0.dev0"
+            },
+            {
+                "name": "onnx",
+                "version": "1.8.0"
+            }
+        ]
+    },
+    {
+        "date": "12/24/2020 00:51:37",
+        "failed": 0,
+        "passed": 0,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "ngraph-core",
+                "version": "0.0.0.dev0"
+            },
+            {
+                "name": "onnx",
+                "version": "1.8.0"
+            }
+        ]
+    },
+    {
+        "date": "01/16/2021 00:50:37",
+        "failed": 396,
+        "passed": 526,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "ngraph-core",
+                "version": "0.0.0.dev0"
+            },
+            {
+                "name": "onnx",
+                "version": "1.8.0"
+            }
+        ]
+    },
+    {
+        "date": "01/17/2021 00:57:33",
+        "failed": 397,
+        "passed": 525,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "ngraph-core",
+                "version": "0.0.0.dev0"
+            },
+            {
+                "name": "onnx",
+                "version": "1.8.0"
+            }
+        ]
+    },
+    {
+        "date": "01/18/2021 00:45:31",
+        "failed": 396,
+        "passed": 526,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "ngraph-core",
+                "version": "0.0.0.dev0"
+            },
+            {
+                "name": "onnx",
+                "version": "1.8.0"
+            }
+        ]
+    },
+    {
+        "date": "01/19/2021 00:51:32",
+        "failed": 391,
+        "passed": 531,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "ngraph-core",
+                "version": "0.0.0.dev0"
+            },
+            {
+                "name": "onnx",
+                "version": "1.8.0"
+            }
+        ]
+    },
+    {
+        "date": "01/21/2021 00:58:22",
+        "failed": 392,
+        "passed": 530,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "ngraph-core",
+                "version": "0.0.0.dev0"
+            },
+            {
+                "name": "onnx",
+                "version": "1.8.0"
+            }
+        ]
+    },
+    {
+        "date": "01/25/2021 00:58:46",
+        "failed": 391,
+        "passed": 531,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "ngraph-core",
+                "version": "0.0.0.dev0"
+            },
+            {
+                "name": "onnx",
+                "version": "1.8.0"
+            }
+        ]
+    },
+    {
+        "date": "01/26/2021 00:51:05",
+        "failed": 380,
+        "passed": 542,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "ngraph-core",
+                "version": "0.0.0.dev0"
+            },
+            {
+                "name": "onnx",
+                "version": "1.8.0"
+            }
+        ]
+    },
+    {
+        "date": "01/29/2021 00:54:37",
+        "failed": 372,
+        "passed": 550,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "ngraph-core",
+                "version": "0.0.0.dev0"
+            },
+            {
+                "name": "onnx",
+                "version": "1.8.0"
+            }
+        ]
+    },
+    {
+        "date": "02/02/2021 01:04:36",
+        "failed": 372,
+        "passed": 550,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "ngraph-core",
+                "version": "0.0.0.dev0"
+            },
+            {
+                "name": "onnx",
+                "version": "1.8.1"
+            }
+        ]
+    },
+    {
+        "date": "02/03/2021 00:55:04",
+        "failed": 371,
+        "passed": 551,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "ngraph-core",
+                "version": "0.0.0.dev0"
+            },
+            {
+                "name": "onnx",
+                "version": "1.8.1"
+            }
+        ]
+    }
+]
