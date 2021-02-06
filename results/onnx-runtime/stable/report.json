@@ -1,5 +1,5 @@
 {
-    "date": "02/04/2021 00:09:05",
+    "date": "02/06/2021 00:10:39",
     "failed": [
         "OnnxBackendNodeModelTest::test_bitshift_left_uint16_cpu",
         "OnnxBackendNodeModelTest::test_bitshift_right_uint16_cpu",
@@ -7,6 +7,7 @@
         "OnnxBackendNodeModelTest::test_cast_FLOAT_to_BFLOAT16_cpu",
         "OnnxBackendNodeModelTest::test_cast_FLOAT_to_STRING_cpu",
         "OnnxBackendNodeModelTest::test_gru_seq_length_cpu",
+        "OnnxBackendNodeModelTest::test_identity_sequence_cpu",
         "OnnxBackendNodeModelTest::test_if_seq_cpu",
         "OnnxBackendNodeModelTest::test_loop13_seq_cpu",
         "OnnxBackendNodeModelTest::test_max_int16_cpu",
