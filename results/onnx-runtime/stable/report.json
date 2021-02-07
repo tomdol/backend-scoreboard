@@ -1,5 +1,5 @@
 {
-    "date": "02/06/2021 00:10:39",
+    "date": "02/07/2021 00:10:59",
     "failed": [
         "OnnxBackendNodeModelTest::test_bitshift_left_uint16_cpu",
         "OnnxBackendNodeModelTest::test_bitshift_right_uint16_cpu",
@@ -930,6 +930,7 @@
         "OnnxBackendNodeModelTest::test_momentum_cpu",
         "OnnxBackendNodeModelTest::test_momentum_multiple_cpu",
         "OnnxBackendNodeModelTest::test_nesterov_momentum_cpu",
+        "OnnxBackendNodeModelTest::test_reshape_allowzero_reordered_cpu",
         "OnnxBackendSimpleModelTest::test_gradient_of_add_and_mul_cpu",
         "OnnxBackendSimpleModelTest::test_gradient_of_add_cpu"
     ]
