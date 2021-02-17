@@ -1,5 +1,5 @@
 {
-    "date": "02/16/2021 01:00:50",
+    "date": "02/17/2021 00:59:15",
     "failed": [
         "OnnxBackendNodeModelTest::test_adagrad_cpu",
         "OnnxBackendNodeModelTest::test_adagrad_multiple_cpu",
@@ -292,8 +292,6 @@
         "OnnxBackendNodeModelTest::test_slice_neg_steps_cpu",
         "OnnxBackendNodeModelTest::test_slice_negative_axes_cpu",
         "OnnxBackendNodeModelTest::test_slice_start_out_of_bounds_cpu",
-        "OnnxBackendNodeModelTest::test_softmax_axis_0_cpu",
-        "OnnxBackendNodeModelTest::test_softmax_axis_1_cpu",
         "OnnxBackendNodeModelTest::test_softmax_default_axis_cpu",
         "OnnxBackendNodeModelTest::test_split_variable_parts_1d_cpu",
         "OnnxBackendNodeModelTest::test_split_variable_parts_2d_cpu",
@@ -758,7 +756,9 @@
         "OnnxBackendNodeModelTest::test_sinh_example_cpu",
         "OnnxBackendNodeModelTest::test_size_cpu",
         "OnnxBackendNodeModelTest::test_size_example_cpu",
+        "OnnxBackendNodeModelTest::test_softmax_axis_0_cpu",
         "OnnxBackendNodeModelTest::test_softmax_axis_0_expanded_cpu",
+        "OnnxBackendNodeModelTest::test_softmax_axis_1_cpu",
         "OnnxBackendNodeModelTest::test_softmax_axis_1_expanded_cpu",
         "OnnxBackendNodeModelTest::test_softmax_axis_2_cpu",
         "OnnxBackendNodeModelTest::test_softmax_axis_2_expanded_cpu",
