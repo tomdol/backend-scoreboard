@@ -22,9 +22,14 @@ RUN pip3 install --no-cache-dir -r /root/setup/requirements_report.txt
 ############## ONNX Backend dependencies ###########
 ENV ONNX_BACKEND="onnx_tf.backend"
 
+# Temporarily build ONNX with patch due to bug fixed in PR #3256 in onnx/onnx
+# After ONNX>1.8.1 is released, revert https://github.com/postrational/backend-scoreboard/pull/10
+RUN pip3 install onnx
+RUN sed -i 's/defs.get_schema(self.op_type)/defs.get_schema(self.op_type, node.domain)/' \
+    /usr/local/lib/python3.6/dist-packages/onnx/backend/test/report/coverage.py 
+
 # Install dependencies
 RUN pip3 install --no-cache-dir \
-    onnx \
     tensorflow \
     onnx-tf
 ####################################################
