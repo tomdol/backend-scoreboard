@@ -72,10 +72,10 @@ ENV ngraph_DIR=${NGRAPH_CPP_BUILD_PATH}
 ENV LD_LIBRARY_PATH=${OV_DIST_DIR}/deployment_tools/ngraph/lib:${LD_LIBRARY_PATH}
 ENV PYTHONPATH=/openvino/bin/intel64/Release/lib/python_api/python3.8:/openvino/ngraph/python/tests:${PYTHONPATH}
 RUN pip3 install -r requirements.txt
+RUN pip3 install onnx
 
 # Temporarily build ONNX with patch due to bug fixed in PR #3256 in onnx/onnx
-# After ONNX>1.8.1 is released, revert https://github.com/postrational/backend-scoreboard/pull/10
-RUN pip3 install onnx
+# After ONNX>1.8.1 is released, remove the following `sed` command:
 RUN sed -i 's/defs.get_schema(self.op_type)/defs.get_schema(self.op_type, node.domain)/' \
     /usr/local/lib/python3.8/dist-packages/onnx/backend/test/report/coverage.py
  

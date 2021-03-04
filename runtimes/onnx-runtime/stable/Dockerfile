@@ -26,9 +26,10 @@ ENV ONNX_BACKEND="onnxruntime.backend.backend"
 # Set locale which is required for StringNormalizer
 RUN locale-gen en_US.UTF-8 && update-locale LANG=en_US.UTF-8
 
-# Temporarily build ONNX with patch due to bug fixed in PR #3256 in onnx/onnx
-# After ONNX>1.8.1 is released, revert https://github.com/postrational/backend-scoreboard/pull/10
 RUN pip3 install onnx
+
+# Temporarily build ONNX with patch due to bug fixed in PR #3256 in onnx/onnx
+# After ONNX>1.8.1 is released, remove the following `sed` command:
 RUN sed -i 's/defs.get_schema(self.op_type)/defs.get_schema(self.op_type, node.domain)/' \
     /usr/local/lib/python3.6/dist-packages/onnx/backend/test/report/coverage.py
 
