@@ -3,34 +3,43 @@
         "onnxruntime": {
             "name": "ONNX-Runtime",
             "results_dir": "./results/onnx-runtime/stable",
-            "core_packages": ["onnxruntime"],
+            "core_packages": [
+                "onnxruntime"
+            ],
             "dockerfile_link": "runtimes/onnx-runtime/stable/Dockerfile"
         },
         "onnx-tf": {
             "name": "ONNX-TF",
             "results_dir": "./results/onnx-tf/stable",
-            "core_packages": ["tensorflow", "onnx-tf"],
+            "core_packages": [
+                "tensorflow",
+                "onnx-tf"
+            ],
             "dockerfile_link": "runtimes/onnx-tf/stable/Dockerfile"
         },
         "openvino": {
             "name": "OpenVINO",
             "results_dir": "./results/openvino/stable",
-            "core_packages": ["ngraph-core"],
+            "core_packages": [
+                "ngraph-core"
+            ],
             "dockerfile_link": "runtimes/openvino/stable/Dockerfile"
+        },
+        "pytorch-caffe2": {
+            "name": "PyTorch-Caffe2",
+            "results_dir": "./results/pytorch-caffe2/stable",
+            "core_packages": ["pytorch", "caffe2"],
+            "dockerfile_link": "runtimes/pytorch-caffe2/stable/Dockerfile"
         }
     },
     "development": {
         "onnxruntime": {
             "name": "ONNX-Runtime",
             "results_dir": "./results/onnx-runtime/development",
-            "core_packages": ["ort-nightly"],
+            "core_packages": [
+                "ort-nightly"
+            ],
             "dockerfile_link": "runtimes/onnx-runtime/development/Dockerfile"
-        },
-        "onnx-tf": {
-            "name": "ONNX-TF",
-            "results_dir": "./results/onnx-tf/development",
-            "core_packages": ["tensorflow"],
-            "dockerfile_link": "runtimes/onnx-tf/development/Dockerfile"
         },
         "openvino": {
             "name": "OpenVINO",
@@ -40,8 +49,16 @@
         "onnx-tf": {
             "name": "ONNX-TF",
             "results_dir": "./results/onnx-tf/development",
-            "core_packages": ["tensorflow"],
+            "core_packages": [
+                "tensorflow"
+            ],
             "dockerfile_link": "runtimes/onnx-tf/development/Dockerfile"
+        },
+        "pytorch-caffe2": {
+            "name": "PyTorch-Caffe2",
+            "results_dir": "./results/pytorch-caffe2/development",
+            "core_packages": [],
+            "dockerfile_link": "runtimes/pytorch-caffe2/development/Dockerfile"
         }
     },
     "deploy_paths": {
