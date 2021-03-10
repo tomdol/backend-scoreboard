@@ -1,0 +1,18 @@
+[
+    {
+        "date": "03/10/2021 12:37:05",
+        "failed": 493,
+        "passed": 428,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "onnx",
+                "version": "1.8.1"
+            },
+            {
+                "name": "torch",
+                "version": "1.9.0a0+git6aa5148"
+            }
+        ]
+    }
+]
