@@ -1,5 +1,5 @@
 {
-    "date": "03/23/2021 00:07:06",
+    "date": "03/24/2021 00:07:34",
     "failed": [
         "OnnxBackendNodeModelTest::test_cast_BFLOAT16_to_FLOAT_cpu",
         "OnnxBackendNodeModelTest::test_cast_FLOAT_to_BFLOAT16_cpu",
