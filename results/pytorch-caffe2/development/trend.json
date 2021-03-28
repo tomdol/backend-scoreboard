@@ -302,5 +302,21 @@
                 "version": "1.9.0a0+git394b720"
             }
         ]
+    },
+    {
+        "date": "03/28/2021 02:50:18",
+        "failed": 493,
+        "passed": 428,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "onnx",
+                "version": "1.8.1"
+            },
+            {
+                "name": "torch",
+                "version": "1.9.0a0+git7caa464"
+            }
+        ]
     }
 ]
