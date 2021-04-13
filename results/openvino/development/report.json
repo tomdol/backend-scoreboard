@@ -1,5 +1,5 @@
 {
-    "date": "04/12/2021 00:59:46",
+    "date": "04/13/2021 00:48:36",
     "failed": [
         "OnnxBackendNodeModelTest::test_adagrad_cpu",
         "OnnxBackendNodeModelTest::test_adagrad_multiple_cpu",
@@ -216,7 +216,6 @@
         "OnnxBackendNodeModelTest::test_unsqueeze_unsorted_axes_cpu",
         "OnnxBackendNodeModelTest::test_upsample_nearest_cpu",
         "OnnxBackendPyTorchOperatorModelTest::test_operator_add_broadcast_cpu",
-        "OnnxBackendPyTorchOperatorModelTest::test_operator_add_size1_broadcast_cpu",
         "OnnxBackendPyTorchOperatorModelTest::test_operator_add_size1_right_broadcast_cpu",
         "OnnxBackendPyTorchOperatorModelTest::test_operator_add_size1_singleton_broadcast_cpu",
         "OnnxBackendPyTorchOperatorModelTest::test_operator_addconstant_cpu",
@@ -883,6 +882,7 @@
         "OnnxBackendPyTorchConvertedModelTest::test_log_softmax_lastdim_cpu",
         "OnnxBackendPyTorchConvertedModelTest::test_softmax_functional_dim3_cpu",
         "OnnxBackendPyTorchConvertedModelTest::test_softmax_lastdim_cpu",
+        "OnnxBackendPyTorchOperatorModelTest::test_operator_add_size1_broadcast_cpu",
         "OnnxBackendPyTorchOperatorModelTest::test_operator_addmm_cpu",
         "OnnxBackendPyTorchOperatorModelTest::test_operator_basic_cpu",
         "OnnxBackendPyTorchOperatorModelTest::test_operator_chunk_cpu",
