@@ -1,5 +1,5 @@
 {
-    "date": "05/06/2021 00:59:28",
+    "date": "05/07/2021 00:49:46",
     "failed": [
         "OnnxBackendNodeModelTest::test_adagrad_cpu",
         "OnnxBackendNodeModelTest::test_adagrad_multiple_cpu",
@@ -102,6 +102,7 @@
         "OnnxBackendNodeModelTest::test_onehot_with_axis_cpu",
         "OnnxBackendNodeModelTest::test_onehot_with_negative_axis_cpu",
         "OnnxBackendNodeModelTest::test_onehot_without_axis_cpu",
+        "OnnxBackendNodeModelTest::test_prelu_broadcast_cpu",
         "OnnxBackendNodeModelTest::test_qlinearconv_cpu",
         "OnnxBackendNodeModelTest::test_qlinearmatmul_2D_cpu",
         "OnnxBackendNodeModelTest::test_qlinearmatmul_3D_cpu",
@@ -612,7 +613,6 @@
         "OnnxBackendNodeModelTest::test_pow_types_int64_float32_cpu",
         "OnnxBackendNodeModelTest::test_pow_types_int64_int64_cpu",
         "OnnxBackendNodeModelTest::test_pow_types_int_cpu",
-        "OnnxBackendNodeModelTest::test_prelu_broadcast_cpu",
         "OnnxBackendNodeModelTest::test_prelu_example_cpu",
         "OnnxBackendNodeModelTest::test_reciprocal_cpu",
         "OnnxBackendNodeModelTest::test_reciprocal_example_cpu",
