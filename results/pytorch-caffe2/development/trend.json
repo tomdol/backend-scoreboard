@@ -990,5 +990,21 @@
                 "version": "1.9.0a0+gitee4be53"
             }
         ]
+    },
+    {
+        "date": "05/09/2021 02:52:08",
+        "failed": 0,
+        "passed": 0,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "onnx",
+                "version": "1.9.0"
+            },
+            {
+                "name": "torch",
+                "version": "1.9.0a0+gite8fb167"
+            }
+        ]
     }
 ]
