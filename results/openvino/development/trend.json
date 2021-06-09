@@ -462,5 +462,21 @@
                 "version": "1.9.0"
             }
         ]
+    },
+    {
+        "date": "06/09/2021 01:00:47",
+        "failed": 242,
+        "passed": 716,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "ngraph-core",
+                "version": "0.0.0.dev0"
+            },
+            {
+                "name": "onnx",
+                "version": "1.9.0"
+            }
+        ]
     }
 ]
