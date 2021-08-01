@@ -46,5 +46,21 @@
                 "version": "1.8.0+cpu"
             }
         ]
+    },
+    {
+        "date": "08/01/2021 00:04:31",
+        "failed": 0,
+        "passed": 0,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "onnx",
+                "version": "1.10.0"
+            },
+            {
+                "name": "torch",
+                "version": "1.8.0+cpu"
+            }
+        ]
     }
 ]
