@@ -1,5 +1,5 @@
 {
-    "date": "10/28/2021 01:08:05",
+    "date": "10/29/2021 01:19:40",
     "failed": [
         "OnnxBackendNodeModelTest::test_adagrad_cpu",
         "OnnxBackendNodeModelTest::test_adagrad_multiple_cpu",
@@ -121,9 +121,7 @@
         "OnnxBackendNodeModelTest::test_or_bcast4v2d_cpu",
         "OnnxBackendNodeModelTest::test_or_bcast4v3d_cpu",
         "OnnxBackendNodeModelTest::test_or_bcast4v4d_cpu",
-        "OnnxBackendNodeModelTest::test_range_float_type_positive_delta_cpu",
         "OnnxBackendNodeModelTest::test_range_float_type_positive_delta_expanded_cpu",
-        "OnnxBackendNodeModelTest::test_range_int32_type_negative_delta_cpu",
         "OnnxBackendNodeModelTest::test_range_int32_type_negative_delta_expanded_cpu",
         "OnnxBackendNodeModelTest::test_reduce_sum_do_not_keepdims_example_cpu",
         "OnnxBackendNodeModelTest::test_reduce_sum_do_not_keepdims_random_cpu",
@@ -651,6 +649,8 @@
         "OnnxBackendNodeModelTest::test_qlinearmatmul_3D_cpu",
         "OnnxBackendNodeModelTest::test_quantizelinear_axis_cpu",
         "OnnxBackendNodeModelTest::test_quantizelinear_cpu",
+        "OnnxBackendNodeModelTest::test_range_float_type_positive_delta_cpu",
+        "OnnxBackendNodeModelTest::test_range_int32_type_negative_delta_cpu",
         "OnnxBackendNodeModelTest::test_reciprocal_cpu",
         "OnnxBackendNodeModelTest::test_reciprocal_example_cpu",
         "OnnxBackendNodeModelTest::test_reduce_l1_default_axes_keepdims_example_cpu",
