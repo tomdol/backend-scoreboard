@@ -1,5 +1,5 @@
 {
-    "date": "11/23/2021 09:08:10",
+    "date": "11/23/2021 11:48:35",
     "failed": [
         "OnnxBackendNodeModelTest::test_adagrad_cpu",
         "OnnxBackendNodeModelTest::test_adagrad_multiple_cpu",
@@ -302,6 +302,7 @@
         "OnnxBackendNodeModelTest::test_concat_3d_axis_negative_2_cpu",
         "OnnxBackendNodeModelTest::test_concat_3d_axis_negative_3_cpu",
         "OnnxBackendNodeModelTest::test_constant_cpu",
+        "OnnxBackendNodeModelTest::test_constant_pad_cpu",
         "OnnxBackendNodeModelTest::test_constantofshape_float_ones_cpu",
         "OnnxBackendNodeModelTest::test_constantofshape_int_shape_zero_cpu",
         "OnnxBackendNodeModelTest::test_constantofshape_int_zeros_cpu",
@@ -350,6 +351,7 @@
         "OnnxBackendNodeModelTest::test_dynamicquantizelinear_max_adjusted_expanded_cpu",
         "OnnxBackendNodeModelTest::test_dynamicquantizelinear_min_adjusted_cpu",
         "OnnxBackendNodeModelTest::test_dynamicquantizelinear_min_adjusted_expanded_cpu",
+        "OnnxBackendNodeModelTest::test_edge_pad_cpu",
         "OnnxBackendNodeModelTest::test_einsum_batch_matmul_cpu",
         "OnnxBackendNodeModelTest::test_einsum_inner_prod_cpu",
         "OnnxBackendNodeModelTest::test_einsum_sum_cpu",
@@ -679,6 +681,7 @@
         "OnnxBackendNodeModelTest::test_reduce_sum_square_keepdims_random_cpu",
         "OnnxBackendNodeModelTest::test_reduce_sum_square_negative_axes_keepdims_example_cpu",
         "OnnxBackendNodeModelTest::test_reduce_sum_square_negative_axes_keepdims_random_cpu",
+        "OnnxBackendNodeModelTest::test_reflect_pad_cpu",
         "OnnxBackendNodeModelTest::test_relu_cpu",
         "OnnxBackendNodeModelTest::test_reshape_extended_dims_cpu",
         "OnnxBackendNodeModelTest::test_reshape_negative_dim_cpu",
