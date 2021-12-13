@@ -65,7 +65,7 @@ WORKDIR /openvino/src/bindings/python
 RUN pip3 install -r requirements.txt
 RUN pip3 install onnx
 
-RUN source /openvino/dist/setupvars.sh
+RUN . /openvino/dist/setupvars.sh
 # ####################################################
 
 CMD . /root/setup/docker-setup.sh && \
