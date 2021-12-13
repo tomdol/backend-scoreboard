@@ -41,7 +41,7 @@ WORKDIR /openvino/build
 RUN cmake .. \
     -G Ninja \
     -DENABLE_CLDNN=OFF \
-    -DENABLE_GNA=OFF \
+    -DENABLE_INTEL_GNA=OFF \
     -DENABLE_OPENCV=OFF \
     -DENABLE_VPU=OFF \
     -DNGRAPH_DEBUG_ENABLE=OFF \
