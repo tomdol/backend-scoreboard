@@ -27,6 +27,7 @@ RUN apt-get install -y --no-install-recommends \
     automake \
     libtool \
     build-essential \
+    ninja-build \
     cmake \
     curl \
     cython3 \
@@ -56,13 +57,13 @@ RUN make -j $(nproc)
 
 # This hack is needed because OpenVINO conftest.py, which sets up backand name variables,
 # is not called while running onnx backend tests.
-RUN sed -i 's/BACKEND_NAME = None/BACKEND_NAME = "CPU"/' /openvino/runtime/bindings/python/tests/__init__.py
+RUN sed -i 's/BACKEND_NAME = None/BACKEND_NAME = "CPU"/' /openvino/src/bindings/python/tests/__init__.py
 # End of hack
 
-WORKDIR /openvino/runtime/bindings/python
+WORKDIR /openvino/src/bindings/python
 RUN pip3 install -r requirements.txt
 RUN pip3 install onnx
-ENV PYTHONPATH=/openvino/bin/intel64/Release/lib/python_api/python3.8:/openvino/runtime/bindings/python/tests:${PYTHONPATH}
+ENV PYTHONPATH=/openvino/bin/intel64/Release/lib/python_api/python3.8:/openvino/src/bindings/python/tests:${PYTHONPATH}
 # ####################################################
 
 CMD . /root/setup/docker-setup.sh && \
