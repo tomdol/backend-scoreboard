@@ -39,6 +39,7 @@ RUN apt-get install -y --no-install-recommends \
 RUN git clone --recurse-submodules --depth 1 https://github.com/openvinotoolkit/openvino.git
 WORKDIR /openvino/build
 RUN cmake .. \
+    -G Ninja \
     -DENABLE_CLDNN=OFF \
     -DENABLE_GNA=OFF \
     -DENABLE_OPENCV=OFF \
@@ -53,7 +54,7 @@ RUN cmake .. \
     -DENABLE_PYTHON=ON \
     -DPYTHON_EXECUTABLE=/usr/bin/python3 \
     -DCMAKE_INSTALL_PREFIX=/openvino/dist
-RUN make -j $(nproc)
+RUN ninja install
 
 # This hack is needed because OpenVINO conftest.py, which sets up backand name variables,
 # is not called while running onnx backend tests.
@@ -63,7 +64,8 @@ RUN sed -i 's/BACKEND_NAME = None/BACKEND_NAME = "CPU"/' /openvino/src/bindings/
 WORKDIR /openvino/src/bindings/python
 RUN pip3 install -r requirements.txt
 RUN pip3 install onnx
-ENV PYTHONPATH=/openvino/bin/intel64/Release/lib/python_api/python3.8:/openvino/src/bindings/python/tests:${PYTHONPATH}
+
+RUN source /openvino/dist/setupvars.sh
 # ####################################################
 
 CMD . /root/setup/docker-setup.sh && \
