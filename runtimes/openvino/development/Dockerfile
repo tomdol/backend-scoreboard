@@ -2,6 +2,7 @@ FROM ubuntu:20.04
 
 # Disable interactive installation mode
 ENV DEBIAN_FRONTEND=noninteractive
+SHELL ["/bin/bash", "-c"]
 
 # Install Python dependencies
 RUN apt-get update && apt-get install -y \
@@ -20,7 +21,6 @@ COPY ./setup /root/setup
 RUN pip3 install --no-cache-dir -r /root/setup/requirements_report.txt
 
 ############## ONNX Backend dependencies ###########
-ENV ONNX_BACKEND="test_onnx.utils.onnx_backend"
 
 RUN apt-get install -y --no-install-recommends \
     autoconf \
@@ -41,18 +41,22 @@ WORKDIR /openvino/build
 RUN cmake .. \
     -G Ninja \
     -DENABLE_CLDNN=OFF \
+    -DENABLE_INTEL_CPU=ON \
     -DENABLE_INTEL_GNA=OFF \
+    -DENABLE_VPU=OFF \
     -DENABLE_OPENCV=OFF \
     -DENABLE_VPU=OFF \
-    -DNGRAPH_DEBUG_ENABLE=OFF \
     -DENABLE_TESTS=OFF \
     -DENABLE_BEH_TESTS=OFF \
     -DENABLE_FUNCTIONAL_TESTS=OFF \
     -DENABLE_PROFILING_ITT=OFF \
     -DENABLE_SAMPLES=OFF \
-    -DENABLE_MKL_DNN=ON \
     -DENABLE_PYTHON=ON \
     -DPYTHON_EXECUTABLE=/usr/bin/python3 \
+    -DENABLE_CPPLINT=OFF \
+    -DENABLE_NCC_STYLE=OFF \
+    -DENABLE_OV_PADDLE_FRONTEND=OFF \
+    -DENABLE_OV_TF_FRONTEND=OFF \
     -DCMAKE_INSTALL_PREFIX=/openvino/dist
 RUN ninja install
 
@@ -65,8 +69,9 @@ WORKDIR /openvino/src/bindings/python
 RUN pip3 install -r requirements.txt
 RUN pip3 install onnx
 
-RUN . /openvino/dist/setupvars.sh
+ENV ONNX_BACKEND="tests.test_onnx.utils.onnx_backend"
 # ####################################################
 
-CMD . /root/setup/docker-setup.sh && \
+CMD source /root/setup/docker-setup.sh && \
+    source /openvino/dist/setupvars.sh && \
     pytest /root/test/test_backend.py --onnx_backend=${ONNX_BACKEND} -k 'not _cuda' -v
