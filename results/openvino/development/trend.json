@@ -688,18 +688,6 @@
         ]
     },
     {
-        "date": "12/29/2021 01:13:06",
-        "failed": 0,
-        "passed": 0,
-        "skipped": 0,
-        "versions": [
-            {
-                "name": "onnx",
-                "version": "1.10.2"
-            }
-        ]
-    },
-    {
         "date": "01/01/2022 01:03:00",
         "failed": 158,
         "passed": 838,
