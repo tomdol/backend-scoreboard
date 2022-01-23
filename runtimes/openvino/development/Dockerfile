@@ -40,12 +40,12 @@ RUN git clone --recurse-submodules --depth 1 https://github.com/openvinotoolkit/
 WORKDIR /openvino/build
 RUN cmake .. \
     -G Ninja \
-    -DENABLE_CLDNN=OFF \
+    -DCMAKE_BUILD_TYPE=Release \
     -DENABLE_INTEL_CPU=ON \
+    -DENABLE_INTEL_GPU=OFF \
     -DENABLE_INTEL_GNA=OFF \
-    -DENABLE_VPU=OFF \
+    -DENABLE_INTEL_VPU=OFF \
     -DENABLE_OPENCV=OFF \
-    -DENABLE_VPU=OFF \
     -DENABLE_TESTS=OFF \
     -DENABLE_BEH_TESTS=OFF \
     -DENABLE_FUNCTIONAL_TESTS=OFF \
