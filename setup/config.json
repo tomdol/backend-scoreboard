@@ -64,6 +64,12 @@
                 "torch"
             ],
             "dockerfile_link": "runtimes/pytorch-caffe2/development/Dockerfile"
+        },
+        "openvino-template": {
+            "name": "OpenVINO Template plugin",
+            "results_dir": "./results/openvino/template",
+            "core_packages": [],
+            "dockerfile_link": "runtimes/openvino/template/Dockerfile"
         }
     },
     "deploy_paths": {

@@ -38,3 +38,28 @@ jobs:
 
     - script: . setup/git-deploy-results.sh
       displayName: 'Deploy results'
+
+  - job: openvino_template
+    timeoutInMinutes: 0
+    steps:
+    - checkout: self
+      persistCredentials: true
+      clean: true
+
+    - task: InstallSSHKey@0
+      inputs:
+        knownHostsEntry: ~/.ssh/known_hosts
+        sshPublicKey: $(public_deploy_key)
+        sshKeySecureFile: deploy_key
+
+    - script: docker build -t scoreboard/openvino_template -f runtimes/openvino/template/Dockerfile .
+      displayName: 'Build docker image'
+
+    - script: . setup/git-setup.sh
+      displayName: 'Git setup'
+
+    - script: docker run --name openvino_template --env-file setup/env.list -v `pwd`/results/openvino/template:/root/results scoreboard/openvino_template || true
+      displayName: 'Run docker container'
+
+    - script: . setup/git-deploy-results.sh
+      displayName: 'Deploy results'

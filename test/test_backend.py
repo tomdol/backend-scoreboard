@@ -7,6 +7,7 @@ import test
 import unittest
 
 import onnx.backend.test
+import os
 
 
 def import_backend(onnx_backend_module):
@@ -28,7 +29,7 @@ def import_backend(onnx_backend_module):
 backend = import_backend(test.ONNX_BACKEND_MODULE)
 
 # Set backend device name to be used
-backend.backend_name = "CPU"
+backend.backend_name = os.getenv("DEVICE_NAME") if os.getenv("DEVICE_NAME") else "CPU"
 
 # This is a pytest variable to load extra plugins
 # Enable the ONNX compatibility report
