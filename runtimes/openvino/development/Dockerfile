@@ -74,4 +74,4 @@ ENV ONNX_BACKEND="tests.test_onnx.utils.onnx_backend"
 
 CMD source /root/setup/docker-setup.sh && \
     source /openvino/dist/setupvars.sh && \
-    pytest /root/test/test_backend.py --onnx_backend=${ONNX_BACKEND} -k 'not _cuda' -v
+    pytest /root/test/test_backend.py --onnx_backend=${ONNX_BACKEND} -k 'not _cuda and not test_sce_NCd1d2d3d4d5_mean_weight_cpu and not test_sce_NCd1d2d3d4d5_mean_weight_log_prob_cpu' -v
