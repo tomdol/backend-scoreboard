@@ -760,30 +760,6 @@
         ]
     },
     {
-        "date": "06/15/2022 01:14:06",
-        "failed": 187,
-        "passed": 824,
-        "skipped": 0,
-        "versions": [
-            {
-                "name": "onnx",
-                "version": "1.11.0"
-            }
-        ]
-    },
-    {
-        "date": "06/18/2022 01:10:11",
-        "failed": 0,
-        "passed": 0,
-        "skipped": 0,
-        "versions": [
-            {
-                "name": "onnx",
-                "version": "1.11.0"
-            }
-        ]
-    },
-    {
         "date": "06/20/2022 01:13:32",
         "failed": 223,
         "passed": 856,
