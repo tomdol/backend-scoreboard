@@ -1,5 +1,5 @@
 {
-    "date": "07/05/2022 01:00:15",
+    "date": "07/06/2022 01:04:19",
     "failed": [
         "OnnxBackendNodeModelTest::test_adagrad_cpu",
         "OnnxBackendNodeModelTest::test_adagrad_multiple_cpu",
@@ -22,8 +22,6 @@
         "OnnxBackendNodeModelTest::test_cast_FLOAT_to_STRING_cpu",
         "OnnxBackendNodeModelTest::test_cast_STRING_to_FLOAT_cpu",
         "OnnxBackendNodeModelTest::test_castlike_BFLOAT16_to_FLOAT_cpu",
-        "OnnxBackendNodeModelTest::test_castlike_DOUBLE_to_FLOAT16_cpu",
-        "OnnxBackendNodeModelTest::test_castlike_DOUBLE_to_FLOAT_cpu",
         "OnnxBackendNodeModelTest::test_castlike_FLOAT_to_BFLOAT16_cpu",
         "OnnxBackendNodeModelTest::test_castlike_FLOAT_to_STRING_cpu",
         "OnnxBackendNodeModelTest::test_castlike_FLOAT_to_STRING_expanded_cpu",
@@ -323,7 +321,9 @@
         "OnnxBackendNodeModelTest::test_cast_FLOAT_to_DOUBLE_cpu",
         "OnnxBackendNodeModelTest::test_cast_FLOAT_to_FLOAT16_cpu",
         "OnnxBackendNodeModelTest::test_castlike_BFLOAT16_to_FLOAT_expanded_cpu",
+        "OnnxBackendNodeModelTest::test_castlike_DOUBLE_to_FLOAT16_cpu",
         "OnnxBackendNodeModelTest::test_castlike_DOUBLE_to_FLOAT16_expanded_cpu",
+        "OnnxBackendNodeModelTest::test_castlike_DOUBLE_to_FLOAT_cpu",
         "OnnxBackendNodeModelTest::test_castlike_DOUBLE_to_FLOAT_expanded_cpu",
         "OnnxBackendNodeModelTest::test_castlike_FLOAT16_to_DOUBLE_cpu",
         "OnnxBackendNodeModelTest::test_castlike_FLOAT16_to_DOUBLE_expanded_cpu",
