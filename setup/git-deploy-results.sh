@@ -9,5 +9,7 @@ set -x  # Command echo on
 git checkout master
 git pull
 git add results
-git commit -m "Scoreboard results [skip ci]"
-git push
+if ! git diff-index --quiet HEAD; then
+  git commit -m "Scoreboard results [skip ci]"
+  git push
+fi 
