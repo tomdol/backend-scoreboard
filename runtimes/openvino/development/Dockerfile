@@ -67,6 +67,8 @@ RUN sed -i 's/BACKEND_NAME = None/BACKEND_NAME = "CPU"/' /openvino/src/bindings/
 
 WORKDIR /openvino/src/bindings/python
 RUN pip3 install -r requirements.txt
+# workaround to fix onnx test runner
+RUN pip3 install numpy==1.23.0 --force-reinstall
 RUN pip3 install onnx
 
 ENV ONNX_BACKEND="tests.test_onnx.utils.onnx_backend"
