@@ -69,6 +69,7 @@ RUN sed -i 's/BACKEND_NAME = None/BACKEND_NAME = "TEMPLATE"/' /openvino/src/bind
 
 WORKDIR /openvino/src/bindings/python
 RUN pip3 install -r requirements.txt
+RUN pip3 install numpy==1.23.0 --force-reinstall
 RUN pip3 install onnx
 
 ENV ONNX_BACKEND="tests.test_onnx.utils.onnx_backend"
