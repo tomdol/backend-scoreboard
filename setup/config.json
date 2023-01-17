@@ -1,26 +1,26 @@
 {
     "stable": {
-        "openvino": {
-            "name": "OpenVINO",
-            "results_dir": "./results/openvino/stable",
+        "openvino-cpu": {
+            "name": "OpenVINO CPU",
+            "results_dir": "./results/openvino/cpu_stable",
             "core_packages": [
                 "ngraph-core"
             ],
-            "dockerfile_link": "runtimes/openvino/stable/Dockerfile"
+            "dockerfile_link": "runtimes/openvino/cpu_stable/Dockerfile"
         }
     },
     "development": {
-        "openvino": {
-            "name": "OpenVINO",
-            "results_dir": "./results/openvino/development",
+        "openvino-cpu": {
+            "name": "OpenVINO CPU (dev)",
+            "results_dir": "./results/openvino/cpu_dev",
             "core_packages": [],
-            "dockerfile_link": "runtimes/openvino/development/Dockerfile"
+            "dockerfile_link": "runtimes/openvino/cpu_dev/Dockerfile"
         },
         "openvino-template": {
             "name": "OpenVINO Template plugin",
-            "results_dir": "./results/openvino/template",
+            "results_dir": "./results/openvino/template_dev",
             "core_packages": [],
-            "dockerfile_link": "runtimes/openvino/template/Dockerfile"
+            "dockerfile_link": "runtimes/openvino/template_dev/Dockerfile"
         }
     },
     "deploy_paths": {
