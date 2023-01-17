@@ -14,7 +14,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 jobs:
-  - job: openvino_development
+  - job: openvino_cpu_dev
     timeoutInMinutes: 0
     steps:
     - checkout: self
@@ -27,19 +27,19 @@ jobs:
         sshPublicKey: $(public_deploy_key)
         sshKeySecureFile: deploy_key
 
-    - script: docker build -t scoreboard/openvino -f runtimes/openvino/development/Dockerfile .
+    - script: docker build -t scoreboard/openvino_cpu_dev -f runtimes/openvino/cpu_dev/Dockerfile .
       displayName: 'Build docker image'
 
     - script: . setup/git-setup.sh
       displayName: 'Git setup'
 
-    - script: docker run --name openvino --env-file setup/env.list -v `pwd`/results/openvino/development:/root/results scoreboard/openvino || true
+    - script: docker run --name openvino_cpu_dev --env-file setup/env.list -v `pwd`/results/openvino/cpu_dev:/root/results scoreboard/openvino_cpu_dev || true
       displayName: 'Run docker container'
 
     - script: . setup/git-deploy-results.sh
       displayName: 'Deploy results'
 
-  - job: openvino_template
+  - job: openvino_template_dev
     timeoutInMinutes: 0
     steps:
     - checkout: self
@@ -52,13 +52,13 @@ jobs:
         sshPublicKey: $(public_deploy_key)
         sshKeySecureFile: deploy_key
 
-    - script: docker build -t scoreboard/openvino_template -f runtimes/openvino/template/Dockerfile .
+    - script: docker build -t scoreboard/openvino_template_dev -f runtimes/openvino/template_dev/Dockerfile .
       displayName: 'Build docker image'
 
     - script: . setup/git-setup.sh
       displayName: 'Git setup'
 
-    - script: docker run --name openvino_template --env-file setup/env.list -v `pwd`/results/openvino/template:/root/results scoreboard/openvino_template || true
+    - script: docker run --name openvino_template_dev --env-file setup/env.list -v `pwd`/results/openvino/template_dev:/root/results scoreboard/openvino_template_dev || true
       displayName: 'Run docker container'
 
     - script: . setup/git-deploy-results.sh
