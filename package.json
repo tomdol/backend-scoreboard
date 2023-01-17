@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/onnx/backend-scoreboard.git"
+    "url": "git+https://github.com/tomdol/backend-scoreboard.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/onnx/backend-scoreboard/issues"
+    "url": "https://github.com/tomdol/backend-scoreboard/issues"
   },
-  "homepage": "https://github.com/onnx/backend-scoreboard#readme",
+  "homepage": "https://github.com/tomdol/backend-scoreboard#readme",
   "devDependencies": {
     "eslint": "^6.5.1",
     "eslint-config-standard": "^14.1.0",

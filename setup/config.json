@@ -17,7 +17,7 @@
             "dockerfile_link": "runtimes/openvino/cpu_dev/Dockerfile"
         },
         "openvino-template": {
-            "name": "OpenVINO Template plugin",
+            "name": "OpenVINO TEMPLATE (dev)",
             "results_dir": "./results/openvino/template_dev",
             "core_packages": [],
             "dockerfile_link": "runtimes/openvino/template_dev/Dockerfile"
@@ -28,5 +28,5 @@
         "subpages": "./docs",
         "resources": "./docs/resources"
     },
-    "repo_url": "https://github.com/onnx/backend-scoreboard/blob/master/"
+    "repo_url": "https://github.com/tomdol/backend-scoreboard/blob/master/"
 }
