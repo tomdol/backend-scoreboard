@@ -12,18 +12,6 @@
         ]
     },
     {
-        "date": "04/12/2022 01:04:40",
-        "failed": 187,
-        "passed": 826,
-        "skipped": 0,
-        "versions": [
-            {
-                "name": "onnx",
-                "version": "1.11.0"
-            }
-        ]
-    },
-    {
         "date": "05/11/2022 01:04:10",
         "failed": 185,
         "passed": 828,
@@ -37,18 +25,6 @@
     },
     {
         "date": "05/25/2022 01:07:14",
-        "failed": 184,
-        "passed": 829,
-        "skipped": 0,
-        "versions": [
-            {
-                "name": "onnx",
-                "version": "1.11.0"
-            }
-        ]
-    },
-    {
-        "date": "06/15/2022 01:22:12",
         "failed": 184,
         "passed": 829,
         "skipped": 0,
