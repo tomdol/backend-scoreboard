@@ -1,5 +1,5 @@
 {
-    "date": "03/23/2023 01:34:56",
+    "date": "03/24/2023 01:29:02",
     "failed": [
         "OnnxBackendNodeModelTest::test_adagrad_cpu",
         "OnnxBackendNodeModelTest::test_adagrad_multiple_cpu",
@@ -57,7 +57,6 @@
         "OnnxBackendNodeModelTest::test_dft_axis_cpu",
         "OnnxBackendNodeModelTest::test_dft_cpu",
         "OnnxBackendNodeModelTest::test_dft_inverse_cpu",
-        "OnnxBackendNodeModelTest::test_div_uint8_cpu",
         "OnnxBackendNodeModelTest::test_dynamicquantizelinear_cpu",
         "OnnxBackendNodeModelTest::test_dynamicquantizelinear_expanded_cpu",
         "OnnxBackendNodeModelTest::test_einsum_batch_diagonal_cpu",
@@ -483,6 +482,7 @@
         "OnnxBackendNodeModelTest::test_div_bcast_cpu",
         "OnnxBackendNodeModelTest::test_div_cpu",
         "OnnxBackendNodeModelTest::test_div_example_cpu",
+        "OnnxBackendNodeModelTest::test_div_uint8_cpu",
         "OnnxBackendNodeModelTest::test_dropout_default_cpu",
         "OnnxBackendNodeModelTest::test_dropout_default_mask_cpu",
         "OnnxBackendNodeModelTest::test_dropout_default_mask_ratio_cpu",
