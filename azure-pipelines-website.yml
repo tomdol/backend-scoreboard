@@ -22,7 +22,7 @@ jobs:
 
     - task: UsePythonVersion@0
       inputs:
-        versionSpec: '3.11'
+        versionSpec: '3.10'
 
     - task: InstallSSHKey@0
       inputs:
