@@ -1,5 +1,5 @@
 {
-    "date": "05/12/2023 01:30:28",
+    "date": "05/13/2023 01:51:37",
     "failed": [
         "OnnxBackendNodeModelTest::test_adagrad_cpu",
         "OnnxBackendNodeModelTest::test_adagrad_multiple_cpu",
@@ -308,8 +308,6 @@
         "OnnxBackendNodeModelTest::test_split_to_sequence_nokeepdims_cpu",
         "OnnxBackendNodeModelTest::test_split_zero_size_splits_opset13_cpu",
         "OnnxBackendNodeModelTest::test_split_zero_size_splits_opset18_cpu",
-        "OnnxBackendNodeModelTest::test_squeeze_cpu",
-        "OnnxBackendNodeModelTest::test_squeeze_negative_axes_cpu",
         "OnnxBackendNodeModelTest::test_stft_cpu",
         "OnnxBackendNodeModelTest::test_stft_with_window_cpu",
         "OnnxBackendNodeModelTest::test_strnormalizer_export_monday_casesensintive_lower_cpu",
@@ -1111,6 +1109,8 @@
         "OnnxBackendNodeModelTest::test_split_variable_parts_default_axis_opset18_cpu",
         "OnnxBackendNodeModelTest::test_sqrt_cpu",
         "OnnxBackendNodeModelTest::test_sqrt_example_cpu",
+        "OnnxBackendNodeModelTest::test_squeeze_cpu",
+        "OnnxBackendNodeModelTest::test_squeeze_negative_axes_cpu",
         "OnnxBackendNodeModelTest::test_sub_bcast_cpu",
         "OnnxBackendNodeModelTest::test_sub_cpu",
         "OnnxBackendNodeModelTest::test_sub_example_cpu",
