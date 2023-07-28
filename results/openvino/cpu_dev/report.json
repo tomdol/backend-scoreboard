@@ -1,5 +1,5 @@
 {
-    "date": "07/27/2023 01:41:21",
+    "date": "07/28/2023 01:44:51",
     "failed": [
         "OnnxBackendNodeModelTest::test_adagrad_cpu",
         "OnnxBackendNodeModelTest::test_adagrad_multiple_cpu",
@@ -261,7 +261,6 @@
         "OnnxBackendNodeModelTest::test_resize_upsample_sizes_nearest_axes_3_2_cpu",
         "OnnxBackendNodeModelTest::test_resize_upsample_sizes_nearest_not_larger_cpu",
         "OnnxBackendNodeModelTest::test_roialign_mode_max_cpu",
-        "OnnxBackendNodeModelTest::test_scatter_elements_with_negative_indices_cpu",
         "OnnxBackendNodeModelTest::test_scatternd_add_cpu",
         "OnnxBackendNodeModelTest::test_scatternd_max_cpu",
         "OnnxBackendNodeModelTest::test_scatternd_min_cpu",
@@ -962,6 +961,7 @@
         "OnnxBackendNodeModelTest::test_scan_sum_cpu",
         "OnnxBackendNodeModelTest::test_scatter_elements_with_axis_cpu",
         "OnnxBackendNodeModelTest::test_scatter_elements_with_duplicate_indices_cpu",
+        "OnnxBackendNodeModelTest::test_scatter_elements_with_negative_indices_cpu",
         "OnnxBackendNodeModelTest::test_scatter_elements_with_reduction_max_cpu",
         "OnnxBackendNodeModelTest::test_scatter_elements_with_reduction_min_cpu",
         "OnnxBackendNodeModelTest::test_scatter_elements_without_axis_cpu",
